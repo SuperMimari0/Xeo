@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Otomatik Web Sitesi Sistemi</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-zinc-950 text-zinc-100">
+
+<!-- HERO -->
+<section class="min-h-screen flex items-center justify-center px-6">
+  <div class="max-w-4xl text-center">
+    <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+      İşletmeler için<br>
+      <span class="text-emerald-400">otomatik web siteleri</span> üretiyorum
+    </h1>
+
+    <p class="mt-6 text-lg text-zinc-400">
+      10 dakikada hazır.  
+      Müşteri kazandıran.  
+      Tam otomasyon.
+    </p>
+
+    <div class="mt-10">
+      <a href="#demo"
+         class="inline-block bg-emerald-500 hover:bg-emerald-400 text-zinc-900 font-semibold px-8 py-4 rounded-xl transition">
+        Ücretsiz Demo Gör
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- NASIL ÇALIŞIR -->
+<section class="py-24 px-6 border-t border-zinc-800">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl font-semibold text-center mb-16">
+      Nasıl Çalışır?
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="bg-zinc-900 p-8 rounded-2xl">
+        <h3 class="text-xl font-semibold mb-3">1. Bilgini alıyoruz</h3>
+        <p class="text-zinc-400">
+          Sektör, hedef ve iletişim bilgileri.
+        </p>
+      </div>
+
+      <div class="bg-zinc-900 p-8 rounded-2xl">
+        <h3 class="text-xl font-semibold mb-3">2. Sistem siteyi üretir</h3>
+        <p class="text-zinc-400">
+          Tasarım, metin ve yapı otomatik oluşur.
+        </p>
+      </div>
+
+      <div class="bg-zinc-900 p-8 rounded-2xl">
+        <h3 class="text-xl font-semibold mb-3">3. Demo link gelir</h3>
+        <p class="text-zinc-400">
+          Beğenirsen yayına alınır.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KARŞILAŞTIRMA -->
+<section class="py-24 px-6 bg-zinc-900">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl font-semibold text-center mb-16">
+      Neden Bu Sistem?
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-10">
+      <div class="border border-zinc-700 p-8 rounded-2xl">
+        <h3 class="text-xl font-semibold mb-4">Klasik Ajans</h3>
+        <ul class="text-zinc-400 space-y-2">
+          <li>• Haftalar sürer</li>
+          <li>• Belirsiz fiyat</li>
+          <li>• Sürekli mesajlaşma</li>
+        </ul>
+      </div>
+
+      <div class="border border-emerald-500 p-8 rounded-2xl">
+        <h3 class="text-xl font-semibold mb-4 text-emerald-400">Bu Sistem</h3>
+        <ul class="text-zinc-200 space-y-2">
+          <li>• Dakikalar içinde</li>
+          <li>• Net teklif</li>
+          <li>• Tam otomatik</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HİZMETLER -->
+<section class="py-24 px-6 border-t border-zinc-800">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl font-semibold text-center mb-16">
+      Ne Alırsın?
+    </h2>
+
+    <div class="grid md:grid-cols-4 gap-6">
+      <div class="bg-zinc-900 p-6 rounded-xl">Otomatik Web Sitesi</div>
+      <div class="bg-zinc-900 p-6 rounded-xl">Sektöre Özel Tasarım</div>
+      <div class="bg-zinc-900 p-6 rounded-xl">WhatsApp & Form</div>
+      <div class="bg-zinc-900 p-6 rounded-xl">Demo & Ödeme Sistemi</div>
+    </div>
+  </div>
+</section>
+
+<!-- DEMO CTA -->
+<section id="demo" class="py-32 px-6 bg-emerald-500 text-zinc-900">
+  <div class="max-w-3xl mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-6">
+      Kendi siteni 10 dakikada gör
+    </h2>
+
+    <p class="mb-10 text-lg">
+      Beğenirsen yayına alalım.  
+      Beğenmezsen sorun yok.
+    </p>
+
+    <a href="#"
+       class="inline-block bg-zinc-900 text-emerald-400 px-10 py-4 rounded-xl font-semibold hover:bg-zinc-800 transition">
+      Demo Oluştur
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-10 text-center text-zinc-500 text-sm">
+  © 2026 · Otomatik Web Sistemi
+</footer>
+
+</body>
+</html>
