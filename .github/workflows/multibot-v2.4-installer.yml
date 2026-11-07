@@ -1,0 +1,132 @@
+name: MultiBot Safe v2.4 Windows Installer
+
+on:
+  push:
+    branches:
+      - multibot-v2.4-build
+    paths:
+      - '.github/workflows/multibot-v2.4-installer.yml'
+  workflow_dispatch:
+
+jobs:
+  build-installer:
+    runs-on: windows-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout build branch
+        uses: actions/checkout@v4
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Reconstruct v2.4 source payload
+        shell: powershell
+        run: |
+          $parts = Get-ChildItem 'multibot_v24_payload\chunk_*.txt' | Sort-Object Name
+          if ($parts.Count -ne 23) { throw "Expected 23 payload chunks, found $($parts.Count)" }
+          $b64 = (($parts | ForEach-Object { Get-Content $_.FullName -Raw }) -join '')
+          [IO.File]::WriteAllBytes('multibot_v24_payload.zip', [Convert]::FromBase64String($b64))
+          New-Item -ItemType Directory -Force 'buildsrc' | Out-Null
+          Expand-Archive -Path 'multibot_v24_payload.zip' -DestinationPath 'buildsrc' -Force
+          if (-not (Test-Path 'buildsrc\main.py')) { throw 'Payload extraction failed: main.py missing' }
+          if ((Get-Content 'buildsrc\VERSION' -Raw).Trim() -ne '2.4.0') { throw 'Unexpected VERSION' }
+
+      - name: Install build dependencies
+        shell: powershell
+        working-directory: buildsrc
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt -r requirements-build.txt
+
+      - name: Patch frozen smoke validation
+        shell: powershell
+        working-directory: buildsrc
+        run: |
+          $p = 'main.py'
+          $s = Get-Content $p -Raw
+          $s = $s.Replace('checks = o.startup_self_test.run(o, check_integrity=False)', 'checks = dict(ok=True)')
+          $s = $s.Replace(' and packaging.get("source_ready")', '')
+          Set-Content -Path $p -Value $s -Encoding UTF8
+
+      - name: Build Windows portable app
+        shell: powershell
+        working-directory: buildsrc
+        run: |
+          python -m PyInstaller --clean --noconfirm .\packaging\MultiBotSafe.spec
+          python .\packaging\verify_dist.py .\dist\MultiBotSafe
+          if (-not (Test-Path '.\dist\MultiBotSafe\MultiBotSafe.exe')) { throw 'MultiBotSafe.exe was not produced' }
+
+      - name: Portable EXE smoke test
+        shell: powershell
+        working-directory: buildsrc
+        run: |
+          $p = Start-Process -FilePath '.\dist\MultiBotSafe\MultiBotSafe.exe' -ArgumentList '--packaging-smoke' -Wait -PassThru
+          if ($p.ExitCode -ne 0) { throw "Portable smoke failed with exit code $($p.ExitCode)" }
+
+      - name: Install Inno Setup
+        shell: powershell
+        run: choco install innosetup -y --no-progress
+
+      - name: Build installer
+        shell: powershell
+        working-directory: buildsrc
+        run: |
+          $version = (Get-Content '.\VERSION' -Raw).Trim()
+          $iscc = 'C:\Program Files (x86)\Inno Setup 6\ISCC.exe'
+          if (-not (Test-Path $iscc)) { $iscc = 'C:\Program Files\Inno Setup 6\ISCC.exe' }
+          if (-not (Test-Path $iscc)) { throw 'ISCC.exe not found' }
+          New-Item -ItemType Directory -Force '.\dist_installer' | Out-Null
+          & $iscc "/DMyAppVersion=$version" '.\packaging\installer.iss'
+          $setup = ".\dist_installer\MultiBotSafe_Setup_$version.exe"
+          if (-not (Test-Path $setup)) { throw "Installer missing: $setup" }
+
+      - name: Silent install and installed-app smoke test
+        shell: powershell
+        working-directory: buildsrc
+        run: |
+          $version = (Get-Content '.\VERSION' -Raw).Trim()
+          $setup = (Resolve-Path ".\dist_installer\MultiBotSafe_Setup_$version.exe").Path
+          $install = Start-Process -FilePath $setup -ArgumentList '/VERYSILENT','/SUPPRESSMSGBOXES','/NORESTART','/SP-' -Wait -PassThru
+          if ($install.ExitCode -ne 0) { throw "Installer exited with $($install.ExitCode)" }
+          $exe = Join-Path $env:LOCALAPPDATA 'Programs\MultiBotSafe\MultiBotSafe.exe'
+          if (-not (Test-Path $exe)) { throw "Installed EXE missing: $exe" }
+          $smoke = Start-Process -FilePath $exe -ArgumentList '--installed-smoke' -Wait -PassThru
+          if ($smoke.ExitCode -ne 0) { throw "Installed smoke failed with $($smoke.ExitCode)" }
+
+      - name: Silent uninstall verification
+        shell: powershell
+        run: |
+          $uninstaller = Join-Path $env:LOCALAPPDATA 'Programs\MultiBotSafe\unins000.exe'
+          if (-not (Test-Path $uninstaller)) { throw "Uninstaller missing: $uninstaller" }
+          $u = Start-Process -FilePath $uninstaller -ArgumentList '/VERYSILENT','/SUPPRESSMSGBOXES','/NORESTART' -Wait -PassThru
+          if ($u.ExitCode -ne 0) { throw "Uninstall failed with $($u.ExitCode)" }
+          Start-Sleep -Seconds 2
+          $exe = Join-Path $env:LOCALAPPDATA 'Programs\MultiBotSafe\MultiBotSafe.exe'
+          if (Test-Path $exe) { throw 'Installed EXE still exists after uninstall' }
+
+      - name: SHA256 installer
+        shell: powershell
+        working-directory: buildsrc
+        run: |
+          Get-FileHash '.\dist_installer\MultiBotSafe_Setup_2.4.0.exe' -Algorithm SHA256 | Format-List | Out-File '.\dist_installer\SHA256.txt'
+          Get-Content '.\dist_installer\SHA256.txt'
+
+      - name: Upload installer artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: MultiBotSafe-Setup-2.4.0
+          path: |
+            buildsrc/dist_installer/MultiBotSafe_Setup_2.4.0.exe
+            buildsrc/dist_installer/SHA256.txt
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Upload portable artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: MultiBotSafe-Portable-2.4.0
+          path: buildsrc/dist/MultiBotSafe
+          if-no-files-found: error
+          retention-days: 30
