@@ -32,6 +32,10 @@ jobs:
           Expand-Archive -Path 'multibot_v22_payload.zip' -DestinationPath 'buildsrc' -Force
           if (-not (Test-Path 'buildsrc\main.py')) { throw 'Payload extraction failed: main.py missing' }
           if ((Get-Content 'buildsrc\VERSION' -Raw).Trim() -ne '2.2.0') { throw 'Unexpected VERSION' }
+          Copy-Item 'multibot_v22_meta\README.md' 'buildsrc\README.md' -Force
+          Copy-Item 'multibot_v22_meta\CHANGELOG.md' 'buildsrc\CHANGELOG.md' -Force
+          Copy-Item 'multibot_v22_meta\integrity_manifest.json' 'buildsrc\integrity_manifest.json' -Force
+          New-Item -ItemType Directory -Force 'buildsrc\reports' | Out-Null
 
       - name: Install build dependencies
         shell: powershell
