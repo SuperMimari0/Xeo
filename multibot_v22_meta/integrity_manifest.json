@@ -1,0 +1,1000 @@
+{
+  "algorithm": "sha256",
+  "root": "MultiBot_Safe_v2.2",
+  "file_count": 236,
+  "total_bytes": 4747291,
+  "aggregate_sha256": "fdb7db7b69c8ee7aa6e443f5bca1bb5a178ac81ce739f3b78152f09de92d8063",
+  "files": [
+    {
+      "path": ".coverage",
+      "size": 77824,
+      "sha256": "16eaea9d68e1700b0025204a16886ce9b65ef249c199c3abfec701bdf43ee366"
+    },
+    {
+      "path": ".github/workflows/windows-release.yml",
+      "size": 1707,
+      "sha256": "79cd3598a20a8fa1f809532a40c36dda7632bf59c867531919b22d98c668b653"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "size": 14528,
+      "sha256": "f4dbdd99ea8cacf652d733e7efb5700907dfbbab91a77df8251355a0e58f0854"
+    },
+    {
+      "path": "README.md",
+      "size": 5733,
+      "sha256": "76415b8c9407eb9c140b2221aa34854860ebf0a72980be6fa47ac155a232a4f2"
+    },
+    {
+      "path": "VERSION",
+      "size": 6,
+      "sha256": "c4a2383a03bdb6739d16a0e24058e4b9c7da4e63d203e0be2f448868cc03c530"
+    },
+    {
+      "path": "docs/PROVIDER_PROTOCOL.md",
+      "size": 5282,
+      "sha256": "0a285b18c664d6ea6777ca18fc064e323ea30c3cc8087e0e63fc6577ff851d5f"
+    },
+    {
+      "path": "docs/PROVIDER_SDK.md",
+      "size": 2642,
+      "sha256": "461d85485db2a4491046b85f932c1024b5ca3c1ba75e1efede52a2d941fabc4a"
+    },
+    {
+      "path": "examples/mock_provider_server.py",
+      "size": 1578,
+      "sha256": "432a291187007003baca51d86a124f0bbfdb9804b385aa2602768989d3581dd5"
+    },
+    {
+      "path": "examples/sdk_provider_server.py",
+      "size": 843,
+      "sha256": "5132518eaf019dfe034bc2b93f4665a6af4ba064edceb71cdacc2b9d3af3bbf1"
+    },
+    {
+      "path": "main.py",
+      "size": 1568,
+      "sha256": "8f44b7c7a61bb8362b0c973f347fb614ffd2deee69f8ee8e217915bee87db2ff"
+    },
+    {
+      "path": "multibot/__init__.py",
+      "size": 22,
+      "sha256": "0ca93ed5bfab66c245c458b526827b4e612f204434adff82f470195b0be3b8cd"
+    },
+    {
+      "path": "multibot/__main__.py",
+      "size": 56,
+      "sha256": "e6bc3eb95a85f4d1f791efbd53e7ada909f7faeea61c34244c8e8a853bea2938"
+    },
+    {
+      "path": "multibot/actions/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "multibot/actions/simulator_adapter.py",
+      "size": 5361,
+      "sha256": "fc6ba9c8d2ffac3b4ce28de2fc802677ed8b053ad55ab6c7e0cca28e3c6eb75e"
+    },
+    {
+      "path": "multibot/app/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "multibot/app/main_window.py",
+      "size": 138550,
+      "sha256": "b3078f100f541dcdff837638fe443ff8ad108524c8df3a03c719488dc5ba575f"
+    },
+    {
+      "path": "multibot/cli.py",
+      "size": 26727,
+      "sha256": "df987e22f8245191d630b45ae329ffd94a158b7933dc5640a03b88ebd0aedfd2"
+    },
+    {
+      "path": "multibot/core/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "multibot/core/action_history.py",
+      "size": 1002,
+      "sha256": "44e38bea947a3120a0776e6f9916d29e1907cd65c7c95ab5d948bd18f98412d2"
+    },
+    {
+      "path": "multibot/core/action_queue.py",
+      "size": 4179,
+      "sha256": "7a44ca13dab1168977118f096e38abe37970a174b45bc7c3fa778e6c7b896935"
+    },
+    {
+      "path": "multibot/core/benchmark_baseline_manager.py",
+      "size": 2659,
+      "sha256": "9d1672695b27ae25e966f58b096687028839584b6defc6575d8d0a13236fe967"
+    },
+    {
+      "path": "multibot/core/benchmark_percentile_manager.py",
+      "size": 1453,
+      "sha256": "ab531415a879de94f098a8a0666aecb0d3cf7e90c1f3c7282ccf9081819921c6"
+    },
+    {
+      "path": "multibot/core/change_log_manager.py",
+      "size": 1889,
+      "sha256": "50db5601bba7d66c5905fc36ba0bfb38faa4c5643a2ab08054bd5848fd438346"
+    },
+    {
+      "path": "multibot/core/chaos_resilience_manager.py",
+      "size": 3713,
+      "sha256": "b88697916de5af3998de0f30b84763da0fafbfe6f43f05708af37d2ad8e57244"
+    },
+    {
+      "path": "multibot/core/character_manager.py",
+      "size": 463,
+      "sha256": "1b52eed7925cfc7d1e3a3dcadbb38a11e50621c904afd2fa00b5356b827067ed"
+    },
+    {
+      "path": "multibot/core/character_profile_manager.py",
+      "size": 2954,
+      "sha256": "3a0893ff5267043edaa90cf512109b79973a6ef36ed20767af2f0567d28cae69"
+    },
+    {
+      "path": "multibot/core/character_role_manager.py",
+      "size": 2938,
+      "sha256": "f56ceec1507fc9f717688c40abb3ad325165770820cdf8c4b68ada198ac45495"
+    },
+    {
+      "path": "multibot/core/checkpoint_diff_manager.py",
+      "size": 1630,
+      "sha256": "c14fb0395a5585c81fdb957e1edf3b58cbb6670e126381acd7c9e92ca34a36e3"
+    },
+    {
+      "path": "multibot/core/client_manager.py",
+      "size": 903,
+      "sha256": "551a1460a28aea92ddc5ad58a040f9e455265bc20e7c45151aedc9a9bc1bc741"
+    },
+    {
+      "path": "multibot/core/condition_chain_manager.py",
+      "size": 5245,
+      "sha256": "2297b9292bf28e751b654b17322856a832b99c5de5b29a30a3cb9ad33eeb6e93"
+    },
+    {
+      "path": "multibot/core/conditional_rule_manager.py",
+      "size": 5602,
+      "sha256": "2dd12bc189a808301f33c1284e399d800600f04d61026f2078210f48c05f4de6"
+    },
+    {
+      "path": "multibot/core/config_backup_manager.py",
+      "size": 4132,
+      "sha256": "010e256132b45e20b96d9b90c0343e71ba73162bf74260f50bbc1e1714a09be4"
+    },
+    {
+      "path": "multibot/core/config_dependency_graph.py",
+      "size": 1955,
+      "sha256": "c26be3038f73551d800c5f9188954473da1b5e6d0f571f9c9c4b6f8b9669224d"
+    },
+    {
+      "path": "multibot/core/config_drift_manager.py",
+      "size": 2927,
+      "sha256": "4011cb14133cc4771dd21df1471d3688b4332ab10ed3fe993f4b114b48e5ce32"
+    },
+    {
+      "path": "multibot/core/config_migration_audit_manager.py",
+      "size": 1803,
+      "sha256": "cc9d8e688f841e6dd499c79d657141701a25d3c709b342296015713d5c598d1d"
+    },
+    {
+      "path": "multibot/core/config_package_manager.py",
+      "size": 2266,
+      "sha256": "5a1323d06e752b94acd07990f3abeb548b9665ef8c6ba0c956df2306898ab54d"
+    },
+    {
+      "path": "multibot/core/config_rule_manager.py",
+      "size": 6004,
+      "sha256": "e0e16bedd15e8ed156e4aa14ee5678ebad9f927595603a75a1d0bfd17a2284ec"
+    },
+    {
+      "path": "multibot/core/config_schema_manager.py",
+      "size": 3465,
+      "sha256": "11c1c66d65dda0e166d961e16b6abcbb1151d2726076d8712acbe9b6252a89bd"
+    },
+    {
+      "path": "multibot/core/coordination_manager.py",
+      "size": 2837,
+      "sha256": "a4cf6127cd7bdf93857bf65ca37c0f9217236be7486bf1b4519af313e056a661"
+    },
+    {
+      "path": "multibot/core/dashboard_alert_manager.py",
+      "size": 3172,
+      "sha256": "1bd0c892a2b71a4275c5bc87e27913f8ca3072864f628ccdce2386ce650ec011"
+    },
+    {
+      "path": "multibot/core/dashboard_manager.py",
+      "size": 1475,
+      "sha256": "a0f9565304a84aee8798a5ab309ae7b6e47d543fa59c6ba79218d45c3040f3fb"
+    },
+    {
+      "path": "multibot/core/dependency_cycle_detector.py",
+      "size": 972,
+      "sha256": "8ce1d362ed32c7069abaed7057638f4e2c1691aa8631488575f9def7b996648a"
+    },
+    {
+      "path": "multibot/core/determinism_manager.py",
+      "size": 3895,
+      "sha256": "5ae4c46ce4076be145c900a2a1ff2154d0b91c3320d5bca8e5898edcf0aa7872"
+    },
+    {
+      "path": "multibot/core/deterministic_seed_registry.py",
+      "size": 2254,
+      "sha256": "2bd236a2f507dbc2b4b9d707284f33988cd87b2083ca2ede56f7a31016a36fef"
+    },
+    {
+      "path": "multibot/core/diagnostics_exporter.py",
+      "size": 6317,
+      "sha256": "64db12ace63e4808a97869fc79ed0169172a98fcb59f8fa86d6ee3e8c8a4181b"
+    },
+    {
+      "path": "multibot/core/event_bus.py",
+      "size": 1064,
+      "sha256": "9238fa2274159eb0d7b26eb7fb4168c4fbc17b484eef970dbc5adef8752bc35e"
+    },
+    {
+      "path": "multibot/core/event_timeline_manager.py",
+      "size": 2451,
+      "sha256": "c27fa7ac63a0a93799b917a28dafa5e6059d4e01fe5c0651ee0b0196fd0116ab"
+    },
+    {
+      "path": "multibot/core/extension_registry.py",
+      "size": 1825,
+      "sha256": "a684f6a8ce9720a93e2325f72deecebdf05070677622ab7cb78949469b896e15"
+    },
+    {
+      "path": "multibot/core/failure_signature_manager.py",
+      "size": 2279,
+      "sha256": "114f8330f0832f8400b63c0df510884812d91c553f47ccb365d7b54cad8a6b77"
+    },
+    {
+      "path": "multibot/core/fault_injection_matrix.py",
+      "size": 2934,
+      "sha256": "0c1b1b7e35698115abe68ad13d3ba3fba7e6be297b817525a78a003e8a2289eb"
+    },
+    {
+      "path": "multibot/core/group_behavior_manager.py",
+      "size": 2390,
+      "sha256": "f0de747933ec92db0c6f3b7c2210c2aaeb0f0e6a3ba290f246422045adf57ca0"
+    },
+    {
+      "path": "multibot/core/group_manager.py",
+      "size": 1210,
+      "sha256": "69e2fd471f7872f3cdfbac4720b1208c55deacb63e4fb4eaa7ad3a74afee0b0e"
+    },
+    {
+      "path": "multibot/core/group_scheduler.py",
+      "size": 3377,
+      "sha256": "ddc4c7d4cc5045482e059fe90a0f4fcd977113539b2c6e46207c34db91c2ddbb"
+    },
+    {
+      "path": "multibot/core/health_score_manager.py",
+      "size": 2815,
+      "sha256": "95d2ade4000b3484feab3a90003a017864cd5b8d73edcd2749389819d10eb617"
+    },
+    {
+      "path": "multibot/core/installer_lifecycle_manager.py",
+      "size": 1705,
+      "sha256": "b23784614b114fbf87b0152bab03c2d9c38291a3937c3d64bd2217f175b4ed99"
+    },
+    {
+      "path": "multibot/core/integrity_report.py",
+      "size": 2857,
+      "sha256": "5a9c03208b73273a1659fd34393a6fa0e878c44a8dfc9d0b5aeb74c4b272768a"
+    },
+    {
+      "path": "multibot/core/interfaces.py",
+      "size": 1056,
+      "sha256": "48e9b2146f5622d183ca0457eb962f5fe19be5631a77dcd9f25fbfdd08ce4e53"
+    },
+    {
+      "path": "multibot/core/inventory_service.py",
+      "size": 889,
+      "sha256": "658c051176d67e6f70b87e874a94c684332e09c4dc190554109e0ef494aaadea"
+    },
+    {
+      "path": "multibot/core/item_resolver.py",
+      "size": 582,
+      "sha256": "00d76cb6bad85c8edaa2de5fec7b91b15ef711974e222fed4c36cd278532913f"
+    },
+    {
+      "path": "multibot/core/long_run_stability_manager.py",
+      "size": 2525,
+      "sha256": "36f0980eabffbd7ef5ec6e5fd1a6d27311767ab4a894b1012ce1af0a99c89767"
+    },
+    {
+      "path": "multibot/core/loot_rules.py",
+      "size": 3227,
+      "sha256": "fb54c14cea5368f22baf81b4fcd3ae79211c7c76dbefd6036bced9bfe2510e4e"
+    },
+    {
+      "path": "multibot/core/metrics_manager.py",
+      "size": 3252,
+      "sha256": "dea7f3d701dadbc8e89692ed4ba5895cc789f3eeb07a5b3e89e6d3b535de71c9"
+    },
+    {
+      "path": "multibot/core/models.py",
+      "size": 1490,
+      "sha256": "cad7d962bdd5b5901d08bd73a374c013178c4ad3f73f117060bbdcf62e1960d1"
+    },
+    {
+      "path": "multibot/core/module_manager.py",
+      "size": 1212,
+      "sha256": "2710e28ca664451c6db1bd5dc73554e8d2456ffb9cba44041ab15a69364ecdeb"
+    },
+    {
+      "path": "multibot/core/module_priority.py",
+      "size": 1528,
+      "sha256": "c6575b719adc7e9645394abd9d2e2232b6e07a2ab2af43462644f043175562c4"
+    },
+    {
+      "path": "multibot/core/orchestrator.py",
+      "size": 57374,
+      "sha256": "f993a2135b9b686d167e9beb416e0d7a29950847ee2ea45073639f36e44640a0"
+    },
+    {
+      "path": "multibot/core/package_manifest_manager.py",
+      "size": 1818,
+      "sha256": "4c393d0dc63a1b91ef745196bb71f6ea8873da1dcc914ac2b200661f842450c0"
+    },
+    {
+      "path": "multibot/core/packaging_config_manager.py",
+      "size": 1878,
+      "sha256": "e617495cb57b8a26b7ecfb112b3e2690eb3f3c10499f2b7392e77bce6382f6f1"
+    },
+    {
+      "path": "multibot/core/packaging_readiness_manager.py",
+      "size": 5366,
+      "sha256": "1ea036b4dc587abd99223d2adcee929d3fc33dc7fcb8c52fc7ede9a555d866f2"
+    },
+    {
+      "path": "multibot/core/performance_budget_manager.py",
+      "size": 5046,
+      "sha256": "f38eef7b8b19887dcbf0109a33d7de722414ff23e27e26fcd5ee00e9cc1d1bd7"
+    },
+    {
+      "path": "multibot/core/performance_profiler.py",
+      "size": 2285,
+      "sha256": "edc0486fcaa85b246d20c955f6c1c5dfbb50704fd990251d599d7e283de82dc1"
+    },
+    {
+      "path": "multibot/core/performance_trends.py",
+      "size": 1451,
+      "sha256": "1715ad9d180c94d8a22e8b77558d330336b8422b08421ff9d755dd8e6d910973"
+    },
+    {
+      "path": "multibot/core/policy_sandbox.py",
+      "size": 1423,
+      "sha256": "efcac4e22029eef769f879151bb7ad7dced05ac364fa754a224c16a23e7cc0e9"
+    },
+    {
+      "path": "multibot/core/profile_comparison.py",
+      "size": 1266,
+      "sha256": "9008dfb59883653d9f63a458a06cfcd873ae29c50f7d9e1661ceb91488c3f7b7"
+    },
+    {
+      "path": "multibot/core/profile_manager.py",
+      "size": 709,
+      "sha256": "1d9b300f5fe7152654847b6b608c841a9b8130c3783c8783cb654e760b1b1c43"
+    },
+    {
+      "path": "multibot/core/profile_template_manager.py",
+      "size": 3652,
+      "sha256": "fe4605d2aae99f3c535ac870e7da5b6c7988d174b7b450920e3004247b75ff4c"
+    },
+    {
+      "path": "multibot/core/provider_config_manager.py",
+      "size": 4852,
+      "sha256": "ca34e69391b8ff71208adee8007d97f27293114d5d4e32e1cdd35428a91c66b1"
+    },
+    {
+      "path": "multibot/core/provider_conformance_manager.py",
+      "size": 4409,
+      "sha256": "e5b114d4565861194c44d573b3bbdc79b85cabdf8ad97422064b52bb355188c5"
+    },
+    {
+      "path": "multibot/core/provider_diagnostics_manager.py",
+      "size": 1200,
+      "sha256": "fe385fa4513882addd0d3e57c724e771db6722fc0d0d1de1933426fd8f4b075d"
+    },
+    {
+      "path": "multibot/core/provider_protocol.py",
+      "size": 9628,
+      "sha256": "474c8edfafa9cda5cb4b7cc63d75365d8d566b04c8e4d7388d099bd25ac3a2d0"
+    },
+    {
+      "path": "multibot/core/provider_resilience_manager.py",
+      "size": 3090,
+      "sha256": "1fc87b60da8b95293fef4b4bd349ab815b5960babb58625c204e6851a664c0e1"
+    },
+    {
+      "path": "multibot/core/provider_runtime_manager.py",
+      "size": 2401,
+      "sha256": "43adacc4aa5021b0234248fbf17cb822ebbd7a7208e0c7c4c2287865c875a548"
+    },
+    {
+      "path": "multibot/core/recovery_manager.py",
+      "size": 4854,
+      "sha256": "f1a1ec3a568f4f6ac8d4cb87d32d7aba60e3b491efb82e3a8f719cada33a652c"
+    },
+    {
+      "path": "multibot/core/recovery_policy_editor.py",
+      "size": 1598,
+      "sha256": "ad3751fd452fbaad6b4954b4563a83e5437776c1077f6e9f61ecdecbf489d03b"
+    },
+    {
+      "path": "multibot/core/regression_gate_manager.py",
+      "size": 2746,
+      "sha256": "33844d42823effbae85e8e616c2fefa20031faf446ce79272eeb131d36d5e5c8"
+    },
+    {
+      "path": "multibot/core/regression_triage_manager.py",
+      "size": 973,
+      "sha256": "1ffe969bbe3df1b8f5bfb0db63ac81098637e07b320e59632c38b342f83a2d2d"
+    },
+    {
+      "path": "multibot/core/release_assurance_manager.py",
+      "size": 2323,
+      "sha256": "945c6d5caf79d7df05d7d25ec58d261854e459ba0a6962fa551403e0cb91c646"
+    },
+    {
+      "path": "multibot/core/release_attestation_manager.py",
+      "size": 2289,
+      "sha256": "7e1df7c8c3b195d86fe6a8745d5e033095ec5717c59cbbc31f69e51fc345096f"
+    },
+    {
+      "path": "multibot/core/release_delta_manager.py",
+      "size": 1851,
+      "sha256": "ba09f02d88fceeee77f2312657214e85eb56758a83f74a943c6dba0eb2c4fd5d"
+    },
+    {
+      "path": "multibot/core/release_gate_manager.py",
+      "size": 7415,
+      "sha256": "27d6fa714948fd193c2165b42d15c0f5bce822c3af1e75c5266a037cf6a7d751"
+    },
+    {
+      "path": "multibot/core/release_provenance_manager.py",
+      "size": 4111,
+      "sha256": "b8ddcbf15772068ca96066072066a694782a29aac054f824566e9279384b0033"
+    },
+    {
+      "path": "multibot/core/release_report_manager.py",
+      "size": 5328,
+      "sha256": "271c77e996276637626e16241b32f31f61c0fcb57f30f8f1a6780ce940094c99"
+    },
+    {
+      "path": "multibot/core/release_reproducibility_manager.py",
+      "size": 1358,
+      "sha256": "8ec2a914067835d9cc2fd366b1b18025c3ced4206a077bf837ad88f06f2feaaf"
+    },
+    {
+      "path": "multibot/core/release_validation_manager.py",
+      "size": 9735,
+      "sha256": "54809fcc12214389f032c6fd1c777b2b7d57cb881ffd9269f0bf410b710723c8"
+    },
+    {
+      "path": "multibot/core/replay_diff_manager.py",
+      "size": 2172,
+      "sha256": "f30856adff0f8921828f5d797d3bfb416fd5f296864e15e24e7009cce1784a40"
+    },
+    {
+      "path": "multibot/core/resource_budget_manager.py",
+      "size": 2355,
+      "sha256": "b14e5aace27aa722e27d2d74d89fdee59a0b68aeb5aee9928f107ef90c49713a"
+    },
+    {
+      "path": "multibot/core/rule_builder.py",
+      "size": 1748,
+      "sha256": "36b3e9fbb74f9a5dd8b921f7203f3b137214ab6117d9e029ce1ebf063f069b6e"
+    },
+    {
+      "path": "multibot/core/rule_simulator.py",
+      "size": 2808,
+      "sha256": "067cc115639672aefdaf72fe7db8f2736d4dfc072b167d166ac5693dd7d4ccff"
+    },
+    {
+      "path": "multibot/core/runtime_issue_manager.py",
+      "size": 1556,
+      "sha256": "5020527a038c052230dec861f64e420c3fcef21b1872019099be5b0fb531b22a"
+    },
+    {
+      "path": "multibot/core/runtime_path_manager.py",
+      "size": 3697,
+      "sha256": "ac9596261720470839902768537652d00b5a0c9641b1281c4c7022167592e4f1"
+    },
+    {
+      "path": "multibot/core/runtime_replay_manager.py",
+      "size": 2214,
+      "sha256": "649d4eb13e61a6f332f1f9b4258b150dc7962725dd9d7be6ae8636fb4f7f05a7"
+    },
+    {
+      "path": "multibot/core/scenario_benchmark_manager.py",
+      "size": 1592,
+      "sha256": "80dd2341f2ed8ae4a44a2b4856cd10629e093c94fcd39d6db1b27c83912304b5"
+    },
+    {
+      "path": "multibot/core/scenario_corpus_manager.py",
+      "size": 3534,
+      "sha256": "a2ffb637a7c56aa88286639933fc64888a06bc25e8cc179dfba174d460e93d68"
+    },
+    {
+      "path": "multibot/core/scenario_diff_manager.py",
+      "size": 2905,
+      "sha256": "d97a58dc6c6048e28cfdb27e6614c11e112f6ba0663bfa2425a0fecabb493188"
+    },
+    {
+      "path": "multibot/core/scenario_fuzzer.py",
+      "size": 2143,
+      "sha256": "2d6e66e625ed56018cf28bdfa7027815eb2f3ccb186a4f57a98e96ee595d955f"
+    },
+    {
+      "path": "multibot/core/scenario_library.py",
+      "size": 3447,
+      "sha256": "00375dad29e051331d269c65d447fdc4d4ad4535545cb76466f1a19c3aa38077"
+    },
+    {
+      "path": "multibot/core/scenario_runner.py",
+      "size": 2714,
+      "sha256": "14836e64a9c49a5b684a35ae5eabb5c376a589b516380f74e8d64bc7f9321bf7"
+    },
+    {
+      "path": "multibot/core/scheduler_manager.py",
+      "size": 4037,
+      "sha256": "e2b12409ef796d5ab5118b59a3d4276603ec47f55d5e2f5aa310d559bf659df7"
+    },
+    {
+      "path": "multibot/core/session_diff_manager.py",
+      "size": 2033,
+      "sha256": "8b6b334e679a9211a69e58de99eac02020481fe883daa4b26ddbfd1ee6e39f28"
+    },
+    {
+      "path": "multibot/core/session_history_manager.py",
+      "size": 2649,
+      "sha256": "3ce8c8e81a305e9de66e0d293a129d43e54f18dcd00557db43a0e778dc1dfeff"
+    },
+    {
+      "path": "multibot/core/session_state_manager.py",
+      "size": 3153,
+      "sha256": "90ec4d4c56ae2a0357aef84f460eb960009a4bb0bbce4d38691bbe3ccd2aadef"
+    },
+    {
+      "path": "multibot/core/snapshot_retention_manager.py",
+      "size": 2709,
+      "sha256": "58df03afd8579fc8342a7cf58fc54995c9ec974ee887919b2660b40c630af3e6"
+    },
+    {
+      "path": "multibot/core/soak_test_manager.py",
+      "size": 1617,
+      "sha256": "a65ab7e114a0938de883df4805d18cdee8dcd7a777cbb82a17c10a67f888fe92"
+    },
+    {
+      "path": "multibot/core/startup_self_test.py",
+      "size": 11551,
+      "sha256": "25a4d4d8e77032408188aceab5fffe95d05ab357c9d9e69e6315768a5a664d29"
+    },
+    {
+      "path": "multibot/core/state_invariant_manager.py",
+      "size": 2469,
+      "sha256": "8b1ae0bd68b903477ccfaf90a3fa9e3b72a3da2831b3035e0662cb237d205ee7"
+    },
+    {
+      "path": "multibot/core/state_verifier.py",
+      "size": 1501,
+      "sha256": "65701b4b26fd03b934847787fb3b32f02c4b62428b54a3a8f054eff1bf1060a4"
+    },
+    {
+      "path": "multibot/core/target_selector.py",
+      "size": 1281,
+      "sha256": "3a971a0f9637268f3e025a9d4db45d9b1137c59bff6dfb423a46c0d3a39bb378"
+    },
+    {
+      "path": "multibot/core/task_chain_manager.py",
+      "size": 4750,
+      "sha256": "4bd53cf3b68d1d5fb1764d03dd7745f700557c99126b45828fa9ce1217804f4f"
+    },
+    {
+      "path": "multibot/core/task_state_machine.py",
+      "size": 2487,
+      "sha256": "3c9e742e081b1be5e45d7c36b7a40609300979ed82812599ef565132299d51eb"
+    },
+    {
+      "path": "multibot/core/test_coverage_manager.py",
+      "size": 2924,
+      "sha256": "db3c9cb937fde4cff47123342b4bb3b0239afab8557595064af2c91506f040c3"
+    },
+    {
+      "path": "multibot/core/tuning_advisor.py",
+      "size": 2944,
+      "sha256": "822afc1b46643e9f27d5e4cbaa4cb2696dbd3b85e92a947f5cce6e7eac84d61d"
+    },
+    {
+      "path": "multibot/core/windows_artifact_verifier.py",
+      "size": 2971,
+      "sha256": "dd411bb676a80c5f9e1381d6b1a9e66efa5c3af0354732e4df615875c5b87141"
+    },
+    {
+      "path": "multibot/core/windows_build_doctor.py",
+      "size": 3603,
+      "sha256": "883fe3d525d4b1e0cbc4b90cd68c32449a64b3f3694b4858ed9d5b9f15fca4fa"
+    },
+    {
+      "path": "multibot/core/windows_release_pipeline.py",
+      "size": 3252,
+      "sha256": "b92d09d7a129359e85ae0a6306ef388467a919041132933a3bf0e340c6df9fb8"
+    },
+    {
+      "path": "multibot/core/workflow_health_manager.py",
+      "size": 2672,
+      "sha256": "27ae78ff21c08ba8f0ed782b464a0b3c13fb34a71d763233755b1842017ec46c"
+    },
+    {
+      "path": "multibot/core/workflow_manager.py",
+      "size": 5424,
+      "sha256": "c4d74df270363f235f8b69d50def3739aa2c16217ab68d0af54b4d28e531e3a8"
+    },
+    {
+      "path": "multibot/core/workflow_preset_manager.py",
+      "size": 2141,
+      "sha256": "f85f6810f97975846af165e74cc254592c44aa5ee21cc44e89b795db1b046bb1"
+    },
+    {
+      "path": "multibot/core/workflow_version_manager.py",
+      "size": 3291,
+      "sha256": "d9f693749c001b1f0a0b836f0d87dec188e1537ba5eae9309b24642fddb4608e"
+    },
+    {
+      "path": "multibot/data/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "multibot/data/items.json",
+      "size": 149,
+      "sha256": "8cddce33d14103fda498175e4b252aa88ccbc1900d787f323b22933c87ca7adf"
+    },
+    {
+      "path": "multibot/modules/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "multibot/modules/auto_hunt.py",
+      "size": 1619,
+      "sha256": "de072f5cf86f75d405e431cbb62d248194dfdfab4afb727bf25d93a60cf7f1b0"
+    },
+    {
+      "path": "multibot/modules/auto_loot.py",
+      "size": 1236,
+      "sha256": "e3de64f576bedac64dea70fed95ae5db00fbf4cab38f1c812c5b2ca2cf9f2160"
+    },
+    {
+      "path": "multibot/modules/auto_potion.py",
+      "size": 835,
+      "sha256": "a487c2e5d5e4acadd8fcc5bd67416bac3ef07e99c186348af0140882477f93d2"
+    },
+    {
+      "path": "multibot/modules/base.py",
+      "size": 250,
+      "sha256": "1d5061afd9affaffde763469f15f97aef4ecac17e6d9de72c383bb818aba0eb0"
+    },
+    {
+      "path": "multibot/modules/inventory.py",
+      "size": 372,
+      "sha256": "6eafe7bc24ff313b7b2deae41e9b417d37ab17d2c236300241cdb9e451f228e5"
+    },
+    {
+      "path": "multibot/modules/movement.py",
+      "size": 1810,
+      "sha256": "3cd6472125da4527c0160892b601336e79877e06130ac4ab697733dc3a2e1888"
+    },
+    {
+      "path": "multibot/provider_sdk/__init__.py",
+      "size": 249,
+      "sha256": "39497ea58e0b50aef12b1236c1d50da1c185cc2a81d7ba9fe92c3dd48cc2cf5f"
+    },
+    {
+      "path": "multibot/provider_sdk/backend.py",
+      "size": 2141,
+      "sha256": "f823d37964814f94085f279a75bb987a8d57844185ce1df9788909939604a488"
+    },
+    {
+      "path": "multibot/provider_sdk/server.py",
+      "size": 6272,
+      "sha256": "228fcf8bb76a4101de5a6f498b3ae0f7a9f596eb8b3fe1c62a1be44629298903"
+    },
+    {
+      "path": "multibot/provider_sdk/simulator_backend.py",
+      "size": 1839,
+      "sha256": "7bd0374c5505fdff43fe169727cbc4d29be55c9287c031566011d8fe18381bab"
+    },
+    {
+      "path": "multibot/providers/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "multibot/providers/external_provider.py",
+      "size": 11401,
+      "sha256": "5cd8b43be7f431e0b9e01b814ea57a46109414fe2d26857a7e7b3957aa314966"
+    },
+    {
+      "path": "multibot/providers/external_transport.py",
+      "size": 10958,
+      "sha256": "77f3aba03aebd676cd4d307676f3cc5ff69e8fda2f2b874338fd1749763051a0"
+    },
+    {
+      "path": "multibot/providers/live_provider_stub.py",
+      "size": 584,
+      "sha256": "809302ef380035719d8ba9ce58c699f513eabcad219cf4ab0536a7a13d522f99"
+    },
+    {
+      "path": "multibot/providers/mock_external_bridge.py",
+      "size": 5173,
+      "sha256": "ea57c3168154751ef48a500a2c201b1563d373aecf7165f7c3cc588c91d34ea6"
+    },
+    {
+      "path": "multibot/providers/simulator_provider.py",
+      "size": 5425,
+      "sha256": "c5333a9482f3f9fe42f27b255b2e0a5432971a571a945f06690e90ce2736577e"
+    },
+    {
+      "path": "multibot/tests/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "multibot/tests/test_orchestrator.py",
+      "size": 139246,
+      "sha256": "f55e13c9d0ac21a1b04474545927065bb8735f85e640f70ea4de5ebd9d36bc32"
+    },
+    {
+      "path": "packaging/MultiBotSafe.spec",
+      "size": 1251,
+      "sha256": "e835ca8a4bd2274892d521080a327de5fac4f9e2ca6e6665060d15628cdde2fb"
+    },
+    {
+      "path": "packaging/README_WINDOWS_BUILD.md",
+      "size": 1493,
+      "sha256": "b761b949e5009b47e515afe28f0737cc89f46508de93d86cc5daeb15e0e4e373"
+    },
+    {
+      "path": "packaging/build_doctor.ps1",
+      "size": 1358,
+      "sha256": "59ce718c533ac674b50a22eb5fdc28d0c2b5fedecfcbd761d0fb8845a6e878fe"
+    },
+    {
+      "path": "packaging/build_windows.bat",
+      "size": 141,
+      "sha256": "1133cd77c2df7ccbf357e8c645d2fa39008c41bb1de3b6c87b9a7a717c68ef81"
+    },
+    {
+      "path": "packaging/build_windows.ps1",
+      "size": 1487,
+      "sha256": "79262177955d4699e7ad02566af1061adbff41e52fc8e062fe858bf7d2dad42f"
+    },
+    {
+      "path": "packaging/clean_install_smoke.ps1",
+      "size": 2624,
+      "sha256": "6958a639613ffb335261c42653047c5b8a8f6f084f073d5e05742e89b5d5eaf6"
+    },
+    {
+      "path": "packaging/installer.iss",
+      "size": 1243,
+      "sha256": "6fab375f1f2299cbb7029ed140e97028e6f9e417b8cdf890299f7cf27f303e7c"
+    },
+    {
+      "path": "packaging/upgrade_smoke.ps1",
+      "size": 3131,
+      "sha256": "752b8cece67dfac62abec0bcca7828777538f704f8e9a756d2e37c09a23faa32"
+    },
+    {
+      "path": "packaging/verify_dist.py",
+      "size": 720,
+      "sha256": "5d5816fed4533edb0fe4179a90ea0d1d26200ca5f25a0c9fd29cef12cae0277f"
+    },
+    {
+      "path": "packaging/verify_windows_release.py",
+      "size": 1609,
+      "sha256": "ca735d8b80305a4887a50fd1d4fddddf3e375a173611692cb730679a667a8c16"
+    },
+    {
+      "path": "packaging/version_info.txt",
+      "size": 742,
+      "sha256": "0cbbbcd023e6372c9a8f0a0b1019829f117bd0467c2b5bb598980ac3f0a2e5db"
+    },
+    {
+      "path": "packaging/windows_release.ps1",
+      "size": 705,
+      "sha256": "5ef64c16ec12afed832b08c8f1ed3355fc4d740628528203cfb325f5afe9c9ab"
+    },
+    {
+      "path": "pyproject.toml",
+      "size": 429,
+      "sha256": "a5ce04936f14db5c7822fd59963493b1de7fef8a76468a8bc3832c12f85ea60e"
+    },
+    {
+      "path": "reports/coverage_raw_v1.6.json",
+      "size": 381599,
+      "sha256": "6a945b9a353e3f321540c4459745fa45f3f3694e3023d06be9d546002412c09d"
+    },
+    {
+      "path": "reports/coverage_raw_v1.7.json",
+      "size": 406698,
+      "sha256": "4925b1553169b867d742af18a49b6dc301dc94c36545d95c24b8ee18390f7d06"
+    },
+    {
+      "path": "reports/coverage_raw_v1.8.json",
+      "size": 422831,
+      "sha256": "34cf50d21f183421ab0f15cea755a7a9b6dc8544145eb410fb8cd7fa689997db"
+    },
+    {
+      "path": "reports/coverage_raw_v1.9.json",
+      "size": 436510,
+      "sha256": "0f0d6a71e7a1c07f03ce2c00de1fd32c7fb1e682bd547064c8d713c5b87e338e"
+    },
+    {
+      "path": "reports/coverage_raw_v2.0.json",
+      "size": 475948,
+      "sha256": "09c0b3e7e23b0baa0de570824c8d55369141a308df7af1136983fd8da6d20f03"
+    },
+    {
+      "path": "reports/coverage_raw_v2.1.json",
+      "size": 487603,
+      "sha256": "dfe97bac77bb0c891b0ef06087ec50ce1078501d3cbccb31f9a6922595257a0a"
+    },
+    {
+      "path": "reports/coverage_raw_v2.2.json",
+      "size": 510163,
+      "sha256": "30b0e84333941aee9ae41ff426fbfaf2d7dbd57b57639bb5666576ef66984013"
+    },
+    {
+      "path": "reports/coverage_summary_v1.1.json",
+      "size": 2192,
+      "sha256": "fe5bc373bab5926e0476ea885981ca41829e573f136b92abcfbc80e46c37d109"
+    },
+    {
+      "path": "reports/coverage_summary_v1.2.json",
+      "size": 2215,
+      "sha256": "0d81bb7a9489089bf4f89cac94e9235a576c9ca9c8c9ad97a07878306737bd39"
+    },
+    {
+      "path": "reports/coverage_summary_v1.3.json",
+      "size": 2043,
+      "sha256": "3fd327340059a082e73a0dc718964218556a98c28530448d2870589636e58850"
+    },
+    {
+      "path": "reports/coverage_summary_v1.4.json",
+      "size": 2045,
+      "sha256": "c34f08ec4bf4476ea84d3c9fe2b3ffdbacb4f43aca7f5d2c916f2b35e8ea626f"
+    },
+    {
+      "path": "reports/coverage_summary_v1.5.json",
+      "size": 229,
+      "sha256": "7b6eb68ff08f3c25d321ee17eeb01b40f3208ba0e59c26e15a6d7637ddcb8a4f"
+    },
+    {
+      "path": "reports/coverage_summary_v1.6.json",
+      "size": 2007,
+      "sha256": "d13780e307030d132576a5cb095599956a19022133decf9694010502c59ce02e"
+    },
+    {
+      "path": "reports/coverage_summary_v1.7.json",
+      "size": 2303,
+      "sha256": "7efadd7dc639fa5d183eb1b4480b3d9f935c53743c94e8a7aab7ffae85ba185d"
+    },
+    {
+      "path": "reports/coverage_summary_v1.8.json",
+      "size": 2047,
+      "sha256": "56e1e8eeb1d4f816817faf0f4412c3428a0ed7f7feec783f89a2bc0d33bb9ca7"
+    },
+    {
+      "path": "reports/coverage_summary_v1.9.json",
+      "size": 2389,
+      "sha256": "598538134070843e5382f1cd8a66fc02f618192f9146e7273ce12165c4872bd8"
+    },
+    {
+      "path": "reports/coverage_summary_v2.0.json",
+      "size": 2389,
+      "sha256": "cc5a6abf81260d8e6ca9049eecf15dc1960cfeeae22fea233966e07c5d83253d"
+    },
+    {
+      "path": "reports/coverage_summary_v2.1.json",
+      "size": 2389,
+      "sha256": "c928988cb48b8aaede1534906055b6b340106aac31491e09237a3955f25eff61"
+    },
+    {
+      "path": "reports/coverage_summary_v2.2.json",
+      "size": 2393,
+      "sha256": "f96f51ce7d61644402779ef7259328bc3aca738b4b889bbd8fa72b12e772462f"
+    },
+    {
+      "path": "reports/integrity_manifest_v1.6.json",
+      "size": 22629,
+      "sha256": "230bc92e86850cb091d96569c73b2ba154b97a12f1e4cfc2805235d41faa7034"
+    },
+    {
+      "path": "reports/integrity_manifest_v1.7.json",
+      "size": 24864,
+      "sha256": "157b440c23fc2fed165d5701bd1af1f6312ef786dfb87d407370e4db227a6d3e"
+    },
+    {
+      "path": "reports/integrity_manifest_v1.8.json",
+      "size": 28522,
+      "sha256": "44fded97013cb4d84c13a6c42ee6ea5917a714a925f69000fee1140e88761029"
+    },
+    {
+      "path": "reports/integrity_manifest_v1.9.json",
+      "size": 31729,
+      "sha256": "79453457e94a79be0e1e56858fe5cca355396e9b86cb7aa1718cfd7b8137048c"
+    },
+    {
+      "path": "reports/integrity_manifest_v2.0.json",
+      "size": 34781,
+      "sha256": "09d204a89d2651c8299ea531f2c54c3c240ce6b3c0cbc6a0a60af70b6d804d23"
+    },
+    {
+      "path": "reports/integrity_manifest_v2.1.json",
+      "size": 36647,
+      "sha256": "baf3cbbadcead1e0d8ba45ced0fb622d1ff61db467cd24d674129be0278728ea"
+    },
+    {
+      "path": "reports/package_manifest_v1.8.json",
+      "size": 26821,
+      "sha256": "cb5700c5148f0da362b2996b222b9f5083eb510394a295ee198ae34c0a785197"
+    },
+    {
+      "path": "reports/package_manifest_v1.9.json",
+      "size": 29762,
+      "sha256": "ad9d562fec6f2d5e36647e84c0dacc554bef52bf24fbe2c5a394c5f60ce45c22"
+    },
+    {
+      "path": "reports/package_manifest_v2.0.json",
+      "size": 32562,
+      "sha256": "43ab9c6e4e7f514fcc9613f57486d30398d688ace40cf79529e47306611bf297"
+    },
+    {
+      "path": "reports/package_manifest_v2.1.json",
+      "size": 34099,
+      "sha256": "4d0b402e86c4d49d020157b5208075a9d5a766e0b9b8cb6ce035edaa82b24db3"
+    },
+    {
+      "path": "reports/package_manifest_v2.2.json",
+      "size": 37039,
+      "sha256": "7e8d581b63a4dbeed7076f4b14e290e460f180e32232a3d9f47e08855dc00446"
+    },
+    {
+      "path": "reports/release_attestation_v1.5.json",
+      "size": 532,
+      "sha256": "0fb4d82a3c8f57e3d880b4fb116afd27d3288ea9fd9920d249fea9ba047726eb"
+    },
+    {
+      "path": "reports/release_attestation_v1.6.json",
+      "size": 500,
+      "sha256": "43c177fe3829252cc4f154967bde17154d9dbbbf5e9c6c7226741660a0d5b155"
+    },
+    {
+      "path": "reports/release_attestation_v1.7.json",
+      "size": 568,
+      "sha256": "558a4fd5ac32bcab5cf61eae9a5a46c935ded9cdc2086d0f08782d1a2a968635"
+    },
+    {
+      "path": "reports/release_attestation_v1.8.json",
+      "size": 562,
+      "sha256": "537f73835c42ec3b89af3eca77f3d4057685559f619828c174245107cbd26437"
+    },
+    {
+      "path": "reports/release_attestation_v1.9.json",
+      "size": 562,
+      "sha256": "32822efedbd1adb5fb74e98533cdc4b82ec27c07e9de1871b9d13aae6e58450b"
+    },
+    {
+      "path": "reports/release_attestation_v2.0.json",
+      "size": 567,
+      "sha256": "42d93d79d9a3215236707f9bc88d86b0531f9d8d4ca9d6af4108d7b2cb979aa1"
+    },
+    {
+      "path": "reports/release_attestation_v2.1.json",
+      "size": 505,
