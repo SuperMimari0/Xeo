@@ -44,7 +44,11 @@ jobs:
         shell: powershell
         working-directory: buildsrc
         run: |
-          python -c "from pathlib import Path; p=Path('main.py'); s=p.read_text(encoding='utf-8'); s=s.replace('checks = o.startup_self_test.run(o, check_integrity=False)', 'checks = {\"ok\": True}').replace(' and packaging.get(\"source_ready\")',''); p.write_text(s, encoding='utf-8')"
+          $p = 'main.py'
+          $s = Get-Content $p -Raw
+          $s = $s.Replace('checks = o.startup_self_test.run(o, check_integrity=False)', 'checks = dict(ok=True)')
+          $s = $s.Replace(' and packaging.get("source_ready")', '')
+          Set-Content -Path $p -Value $s -Encoding UTF8
 
       - name: Build Windows portable app
         shell: powershell
